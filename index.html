@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="./app.js" defer></script>
+    <title>Dijkstra</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Algorithme De Dijkstra</h1>
+      </nav>
+    </header>
+
+    <main>
+      <p class="resume">
+        En théorie des graphes, l'algorithme de Dijkstra sert à résoudre le
+        problème du plus court chemin. Il permet, par exemple, de déterminer un
+        plus court chemin pour se rendre d'une ville à une autre connaissant le
+        réseau routier d'une région.
+      </p>
+
+      <form action="">
+        <h2>Départ</h2>
+        <ul class="start">
+          <li>
+            <label for="adress-start">Adresse</label>
+            <input id="adress-start" type="text" />
+          </li>
+          <li>
+            <label for="city-start">Ville</label>
+            <input id="city-start" type="text" />
+          </li>
+          <li>
+            <label for="postal-code-start">Code postal</label>
+            <input id="postal-code-start" type="text" />
+          </li>
+        </ul>
+        <h2>Points de passage</h2>
+        <ul class="place">
+          <li>
+            <label for="adress">Adresse</label>
+            <input id="adress" type="text" />
+          </li>
+          <li>
+            <label for="city">Ville</label>
+            <input id="city" type="text" />
+          </li>
+          <li>
+            <label for="postal-code">Code postal</label>
+            <input id="postal-code" type="text" />
+          </li>
+          <button class="add">+</button>
+        </ul>
+      </form>
+
+      <div class="lieux"></div>
+      <button class="calcul pulse">Go</button>
+    </main>
+  </body>
+</html>
